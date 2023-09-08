@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <style>
+        a {
+           margin-inline: 13px;
+           color: black;
+           font-family: Arial, Helvetica, sans-serif;
+       }
+
+       body {
+           font-family: Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+           background-color: #f5f5f5;
+           text-align: center;
+       }
+
+       
+
+       .navbar-brand img {
+           max-height: 106px;
+       }
+
+        .container {
+           max-width: 100%;
+           max-height: auto;
+           margin: 0 auto;
+           padding: 10px;
+       }
+
+       /*
+       .event-description {
+           color: #fff;
+           text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+           max-width: 80%;
+           margin: 0 auto;
+           position: absolute;
+           top: 70%;
+           left: 50%;
+           font-family: 'Times New Roman', Times, serif;
+           font-size: 24px;
+           transform: translate(-50%, -50%);
+           z-index: 1;
+           padding: 15px;
+           background-color: rgba(0, 0, 0, 0.7); 
+           border-radius: 10px;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+       }
+
+       .image-slider {
+           width: 100%;
+           height: auto; 
+           max-height: 80vh; 
+           overflow: hidden;
+       }
+
+       .slider-content {
+           display: flex;
+           animation: slide 20s infinite;
+       }
+
+       .slider-content img {
+           width: 100vw;
+           height: 80vh;
+           object-fit: cover;
+       }
+      
+
+
+
+       @keyframes slide {
+           0% { transform: translateX(0); }
+           20% { transform: translateX(-100%); }
+           40% { transform: translateX(-200%); }
+           60% { transform: translateX(-300%); }
+           80% { transform: translateX(-400%); }
+           100% { transform: translateX(-500%); }
+       }
+       @media (max-width: 576px) {
+       
+           .event-description {
+               top: 90%; 
+               width: 90%; 
+               font-size: 18px;
+           }
+*/
+        
+           .container {
+               width: 90%; 
+              
+           } 
+
+           .navbar {
+                background-image: linear-gradient(to right, rgb(95, 151, 235), rgb(177, 115, 232));
+           }
+
+           .color {
+                color: white;
+                font-size: 23px;
+           }
+       
+           .img-fluid {
+                height: 100%;
+                width: 200px;
+           }
+
+   </style>
+</head>
+<body>
+   <header>
+       <nav class="navbar navbar-expand-lg">
+           <div class="container">
+               <div class="navbar-collapse">
+                   <ul class="navbar-nav mr-auto">
+                       <li class="nav-item">
+                           <a class="nav-link color" href="#">Our Team</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link color" href="dist/events.html">Events</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link color" href="#">TechFest Insights</a>
+                       </li>
+                   </ul>
+                   <a class="navbar-brand mx-auto" href="#">
+                       <img class="img-fluid" src="images/logo.png" alt="Insignia Logo">
+                   </a>
+                   <ul class="navbar-nav ml-auto">
+                       
+                       <li class="nav-item">
+                           <a class="nav-link color" href="#">Registrations</a>
+                       </li>
+                      
+                       <li class="nav-item">
+                           <a class="nav-link color" href="#">Past Glory: Insignia 2022</a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </nav>
+   </header>
+
+    <h1 class="mt-10 mb-2 text-center capitalize text-4xl">Events</h1>
+    <hr class="w-1/12 mx-auto">
+
+    <h4>
+        INSIGNIA’ 2023 will include several events for the students to showcase their skills and have fun. The event will include :
+    </h4>
+
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-3 md:gap-2 justify-items-center mt-10">
+        <!-- 1st card -->
+        <div class="py-10">
+            <div
+                class="bg-blue-100 h-full rounded overflow-hidden shadow-2xl max-w-sm hover:drop-shadow-2xl cursor-pointer hover:shadow-blue-900 duration-1000">
+                <img src="images/technical-events.jpg" alt="" class="h-1/3">
+                <div class="px-6 py-4">
+                    <div class="font-semibold text-3xl mt-2 mb-7 text-center">
+                        TECHNICAL EVENTS
+                    </div>
+                    <ul class="text-gray-700 text-xl">
+                        <li>Quiz-O-Pedia
+                        </li>
+                        <li>Tech-Deb
+                        </li>
+                        <li>Spin a Web
+                        </li>
+                        <li>AvishkarAnvesha
+                        </li>
+                        <li>Codecode
+                        </li>
+                        <li>LAN/Mobile Gaming
+                        </li>
+                        <li>Project Display
+                        </li>
+                        <li>Electro-Hunt
+                        </li>
+                        <li>Ad-Vaganza
+                        </li>
+                        <li>SharkTank
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="py-10">
+            <div
+                class="bg-green-100 h-full rounded overflow-hidden shadow-2xl max-w-sm hover:drop-shadow-2xl cursor-pointer hover:shadow-green-900   duration-1000">
+                <img src="images/cultural-events.jpg" alt="" class="h-1/3">
+                <div class="px-6 py-4">
+                    <div class="font-semibold text-3xl mt-2 mb-7 text-center">
+                        CULTURAL EVENTS
+                    </div>
+                    <ul class="text-gray-700 text-xl">
+                        <li>Aaja Nachle
+                        </li>
+                        <li>SAREGAMA
+                        </li>
+                        <li>Rangmanch
+                        </li>
+                        <li>Reels Recursive
+                        </li>
+                        <li>Photography
+                        </li>
+                        <li>Cinematography
+                        </li>
+                        <li>FashionIsta
+                        </li>
+                        <li>Standup
+                        </li>
+                        <li>Comedy/Mimicry
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="py-10">
+            <div
+                class="bg-orange-100 h-full rounded overflow-hidden shadow-2xl max-w-sm hover:drop-shadow-2xl cursor-pointer hover:shadow-orange-900 duration-1000">
+                <img src="images/fun-activities.jpg" alt="" class="h-1/3">
+                <div class="px-6 py-4">
+                    <div class="font-semibold text-3xl mt-2 mb-7  text-center">
+                        FUN ACTIVITIES
+                    </div>
+                    <ul class="text-gray-700 text-xl">
+                        <li>Treasure Hunt
+                        </li>
+                        <li>Box Cricket
+                        </li>
+                        <li>Headphone Whisper
+                        </li>
+                        <li>Bollywood Hungama
+                        </li>
+                        <li>Caption Star
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
