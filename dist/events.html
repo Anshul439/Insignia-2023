@@ -4,158 +4,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Insignia - Intercollege Event</title>
+    <link rel="shortcut icon" href="assets/images/insignialogo.png">
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-
-<body>
-
     <style>
         a {
-           margin-inline: 13px;
-           color: black;
-           font-family: Arial, Helvetica, sans-serif;
-       }
+            margin-inline: 14px;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+        }
 
-       body {
-           font-family: Arial, sans-serif;
-           margin: 0;
-           padding: 0;
-           background-color: #f5f5f5;
-           text-align: center;
-       }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            text-align: center;
+            overflow-x: hidden;
+        }
 
-       
+        header {
+            font-family: 'Times New Roman', Times, serif;
 
-       .navbar-brand img {
-           max-height: 106px;
-       }
+        }
+
+        header p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            justify-content: center;
+        }
+
+        .navbar-brand img {
+            max-height: 140px;
+        }
 
         .container {
-           max-width: 100%;
-           max-height: auto;
-           margin: 0 auto;
-           padding: 10px;
-       }
+            max-width: 100%;
+            max-height: auto;
+            margin: 0 auto;
+            padding: 10px;
+        }
 
-       /*
-       .event-description {
-           color: #fff;
-           text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-           max-width: 80%;
-           margin: 0 auto;
-           position: absolute;
-           top: 70%;
-           left: 50%;
-           font-family: 'Times New Roman', Times, serif;
-           font-size: 24px;
-           transform: translate(-50%, -50%);
-           z-index: 1;
-           padding: 15px;
-           background-color: rgba(0, 0, 0, 0.7); 
-           border-radius: 10px;
-           box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-       }
+        .event-description {
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            max-width: 80%;
+            margin: 0 auto;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
 
-       .image-slider {
-           width: 100%;
-           height: auto; 
-           max-height: 80vh; 
-           overflow: hidden;
-       }
+        .image-slider {
+            width: 100%;
+            height: auto;
+            max-height: 80vh;
+            overflow: hidden;
+        }
 
-       .slider-content {
-           display: flex;
-           animation: slide 20s infinite;
-       }
+        .slider-content {
+            display: flex;
+            animation: slide 20s infinite;
+        }
 
-       .slider-content img {
-           width: 100vw;
-           height: 80vh;
-           object-fit: cover;
-       }
-      
+        .slider-content img {
+            width: 100vw;
+            height: 80vh;
+            object-fit: cover;
+        }
 
 
 
-       @keyframes slide {
-           0% { transform: translateX(0); }
-           20% { transform: translateX(-100%); }
-           40% { transform: translateX(-200%); }
-           60% { transform: translateX(-300%); }
-           80% { transform: translateX(-400%); }
-           100% { transform: translateX(-500%); }
-       }
-       @media (max-width: 576px) {
-       
-           .event-description {
-               top: 90%; 
-               width: 90%; 
-               font-size: 18px;
-           }
-*/
-        
-           .container {
-               width: 90%; 
-              
-           } 
 
-           .navbar {
-                background-image: linear-gradient(to right, rgb(95, 151, 235), rgb(177, 115, 232));
-           }
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
 
-           .color {
-                color: white;
-                font-size: 23px;
-           }
-       
-           .img-fluid {
-                height: 100%;
-                width: 200px;
-           }
+            20% {
+                transform: translateX(-100%);
+            }
 
-   </style>
+            40% {
+                transform: translateX(-200%);
+            }
+
+            60% {
+                transform: translateX(-300%);
+            }
+
+            80% {
+                transform: translateX(-400%);
+            }
+
+            100% {
+                transform: translateX(-500%);
+            }
+        }
+
+        @media (min-width: 300px) and (max-width: 795px) {
+
+            .event-description {
+                top: 90%;
+                width: 90%;
+                font-size: 18px;
+            }
+
+
+            .container {
+                width: 90%;
+
+            }
+
+            #left {
+                margin-left: -35%;
+            }
+
+            #right {
+                margin-right: -35%;
+            }
+        }
+
+        @media (min-width: 800px) and (max-width: 1280px) {
+
+            #left {
+                margin-left: -20%;
+            }
+
+            #right {
+                margin-right: -20%;
+            }
+        }
+
+        .event-card {
+            flex-basis: calc(33.33% - 20px);
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .event-card img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .card:hover {
+            transition: transform 0.2s ease;
+            transform: scale(0.9);
+
+        }
+
+        .trophy-img {
+            max-width: 50px;
+        }
+
+
+        .trophy-decoration {
+            position: absolute;
+            top: 2%;
+
+        }
+
+        .left {
+            left: 30%;
+        }
+
+        .right {
+            right: 30%;
+        }
+
+        .navbar {
+            background-image: linear-gradient(to right, rgb(95, 151, 235), rgb(177, 115, 232));
+            /* height: 120px; */
+            height: 80%;
+            padding: 0.25rem;
+        }
+
+        .color {
+            color: white;
+            font-size: 20px;
+        }
+
+        .color {
+            color: white;
+            /* Set the initial color */
+            transition-duration: 400ms;
+        }
+
+        .color:hover {
+            color: gainsboro;
+        }
+
+
+        .logo {
+            width: 75%;
+            height: auto;
+            margin-left: 13px;
+        }
+    </style>
 </head>
+
 <body>
-   <header>
-       <nav class="navbar navbar-expand-lg">
-           <div class="container">
-               <div class="navbar-collapse">
-                   <ul class="navbar-nav mr-auto">
-                       <li class="nav-item">
-                           <a class="nav-link color" href="#">Our Team</a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link color" href="dist/events.html">Events</a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link color" href="#">TechFest Insights</a>
-                       </li>
-                   </ul>
-                   <a class="navbar-brand mx-auto" href="#">
-                       <img class="img-fluid" src="images/logo.png" alt="Insignia Logo">
-                   </a>
-                   <ul class="navbar-nav ml-auto">
-                       
-                       <li class="nav-item">
-                           <a class="nav-link color" href="#">Registrations</a>
-                       </li>
-                      
-                       <li class="nav-item">
-                           <a class="nav-link color" href="#">Past Glory: Insignia 2022</a>
-                       </li>
-                   </ul>
-               </div>
-           </div>
-       </nav>
-   </header>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link color" href="#">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color" href="#">TechFest Insights</a>
+                        </li>
+                    </ul>
+                    <a class="navbar-brand mx-auto" href="index.html">
+                        <img class="logo" src="images/logo1.png" alt="Insignia Logo">
+                    </a>
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link color" href="#">Registrations</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link color" href="#">Past Glory: Insignia 2022</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <h1 class="mt-10 mb-2 text-center capitalize text-4xl">Events</h1>
     <hr class="w-1/12 mx-auto">
 
     <h4>
-        INSIGNIA’ 2023 will include several events for the students to showcase their skills and have fun. The event will include :
+        INSIGNIA’ 2023 will include several events for the students to showcase their skills and have fun. The event
+        will include :
     </h4>
 
     <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-3 md:gap-2 justify-items-center mt-10">
@@ -249,6 +347,17 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 
